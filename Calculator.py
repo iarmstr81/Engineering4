@@ -1,5 +1,5 @@
 ##Caluclator
-##Written by Imogen A
+##Imogen Armstrong
 
 input1 = input("Select First Number: ") 
 input2 = input("Select Second Number: ")
