@@ -10,7 +10,7 @@ My Engineering 4 work
 * [Challenge Man Shaped Piñata](#Challenge-Man-Shaped-Piñata)
 
 ## Pi Online
-In this assignment I was tasked with connecting my raspberry pi to the internet. My pi wouldn't connect to the wifi at my house but I did manage to connect it to my personal hotspot. I had to take the space out of the name of my phone and it took a few tries before it actually connected. I couldn't find any reason for it to not be connecting so I just kept trying and eventually it connected.
+In this assignment I was tasked with connecting my raspberry pi to the internet. My pi wouldn't connect to the wifi at my house but I did manage to connect it to my personal hotspot. I had to take the space out of the name of my phone and it took a few tries before it actually connected. I couldn't find any reason for it to not be connecting so I just kept trying and eventually it connected. I would love to be able to connect it to my home wifi because it would make it so much easier to push to my repo. This is because everytime I forget that I have to turn on my hotspot before trying to push anything to my repo.
 
 ## Hello Python/Dice Roller
 ### Description
