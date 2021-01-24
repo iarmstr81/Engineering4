@@ -39,7 +39,7 @@ while True:
                 sys.exit() #ends the program
 ```
 ### Images
-<img src="Pictures/DiceRollerPicture.png" width="300">
+<img src="Pictures/DiceRollerPicture.png" width="400">
 
 ### Reflection
 I struggled with this assignment in the beginning because I didn't know how I would be able to press enter and get feedback. However after I figured it out it out the rest of the code was easy.
