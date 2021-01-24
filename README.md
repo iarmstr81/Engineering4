@@ -173,41 +173,41 @@ for x in range(len(answer)):  #makes array as long as the answer
 def Pinata(PinataState):  #this is the array of the man pinata drawings
   if PinataState == 0:
         print(" ")
-        print("---┐")
+        print("---|")
         print(" ")
   if PinataState == 1:
         print(" ")
-        print("---┐")
+        print("---|")
         print("   0")
         print(" ")
   if PinataState == 2:
         print(" ")
-        print("---┐")
+        print("---|")
         print("   0")
         print("  / ")
         print(" ")
   if PinataState == 3:
         print(" ")
-        print("---┐")
+        print("---|")
         print("   0")
         print("  /|")
         print(" ")
   if PinataState == 4:
         print(" ")
-        print("---┐")
+        print("---|")
         print("   0")
         print("  /|\ ")
         print(" ")
   if PinataState == 5:
         print(" ")
-        print("---┐")
+        print("---|")
         print("   0")
         print("  /|\ ")
         print("  /  ")
         print(" ")
   if PinataState == 6:
         print(" ")
-        print("---┐")
+        print("---|")
         print("   0")
         print("  /|\ ")
         print("  / \ ")
