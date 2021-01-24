@@ -39,6 +39,7 @@ while True:
                 sys.exit() #ends the program
 ```
 ### Images
+<img src="Pictures/DiceRollerPicture.png" width="300">
 
 ### Reflection
 I struggled with this assignment in the beginning because I didn't know how I would be able to press enter and get feedback. However after I figured it out it out the rest of the code was easy.
@@ -78,6 +79,7 @@ print("Quotient:\t" + str(doMath(input1,input2,4)))
 print("Modulo:\t\t" + str(doMath(input1,input2,5)))
 ```
 ### Images
+<img src="Pictures/CalculatorPicture.png" width="300">
 
 ### Reflection
 This assignment really helped reteach/remind me how to use functions with parameters. Basically when you define the function you need to declare that the function will need parameters. It will then use those parameters when you call the function to get a result.
@@ -123,6 +125,7 @@ else:
    print(rootArray)
 ```
 ### Images
+<img src="Pictures/QuadraticSolver.png" width="300">
 
 ### Reflection
 This code took me awhile because I ran into an error. Everything that should of fixed it wouldn't. Until one day I did something I don't remember what it was but then it worked. Except for that issue I did really enjoy this assignment. It was really good to get practice using arrays. 
@@ -143,6 +146,7 @@ for x in range(0, len(a)): #a loop that runs for length of the string
   print("-") # print a dash in between the words
 ```
 ### Images
+<img src="Pictures/StringsandLoops.png" width="300">
 
 ### Reflection
 I went into thinking this assignment would be a lot harder than it was because it seemed so complicated having to print out each individual letter. 
@@ -242,6 +246,7 @@ else:
     print("Sorry, you lost!")
 ```
 ### Images
+<img src="Pictures/MSPPicture.png" width="300">
 
 ### Reflection
 This code took me awhile to figure out because I wasn't sure how I was going to do it. I started by setting up the list of words and getting it to pick a random one. After I had that I moved on to setting up how the man shaped piñata would print. I then figured out how the guessing would work.
