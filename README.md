@@ -4,7 +4,7 @@ My Engineering 4 work
 # Table of Contents
 * [Pi Online](#Pi-Online)
 * [Hello Python/Dice Roller](#Hello-Python/Dice-Roller)
-* [Program 01 Calculator](#Program-01:-Calculator)
+* [Program 01 Calculator](#Program-01-Calculator)
 * [Program 02 Quadratic Solver](#Program-02-Quadratic-Solver)
 * [Program 03 Strings and Loops](#Program-03-Strings-and-Loops)
 * [Challenge Man Shaped Piñata](#Challenge-Man-Shaped-Piñata)
