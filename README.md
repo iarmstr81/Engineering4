@@ -256,7 +256,7 @@ This code took me awhile to figure out because I wasn't sure how I was going to 
 ### Discription
 In this assignment, we had to make an LED blink 10 times using bash.
 ### Code
-'''python
+```python
 gpio -g mode 1 out
 gpio -g mode 2 out
 num=0 
@@ -271,10 +271,11 @@ do
 done
 gpio -g write 1 0 
 gpio -g write 2 0 
-'''
+```
 ### Images
 
 ### Reflection
+
 This module was a bit tricker than previous ones. It took me a little bit of research but eventually I figured it out.
 =======
 ## GPIO Pins I2C
