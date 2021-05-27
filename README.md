@@ -251,6 +251,7 @@ else:
 ### Reflection
 This code took me awhile to figure out because I wasn't sure how I was going to do it. I started by setting up the list of words and getting it to pick a random one. After I had that I moved on to setting up how the man shaped piñata would print. I then figured out how the guessing would work.
 
+<<<<<<< HEAD
 ## GPIO pins - Bash
 ### Discription
 In this assignment, we had to make an LED blink 10 times using bash.
@@ -275,3 +276,74 @@ gpio -g write 2 0
 
 ### Reflection
 This module was a bit tricker than previous ones. It took me a little bit of research but eventually I figured it out.
+=======
+## GPIO Pins I2C
+### Description
+In this assignment we were tasked with using an accelerometer and an OLCD screen. I used the values I recieved from the accelerometer and then showed those values on the screen. A lot of this assignment was downloading and learning how to use the screen and accelerometer.
+
+### Code
+```
+import time
+import Adafruit_SSD1306
+import Adafruit_LSM303
+
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+RST = 24
+accelerometer = Adafruit_LSM303.LSM303() #accelerometer setup
+disp = Adafruit_SSD1306.SSD1306_128_32(rst=RST, i2c_address=0x3d)#display setup
+disp.begin()
+disp.clear()
+disp.display()
+
+width = disp.width
+height = disp.height
+image = Image.new('1', (width, height))
+
+draw = ImageDraw.Draw(image)
+draw.rectangle((0,0,width,height), outline=0, fill=0)
+
+padding = 2
+shape_width = 20
+top = padding
+bottom = height - padding
+x = padding
+font = ImageFont.load_default()
+
+
+while True:
+	accel, mag = accelerometer.read() # gets accelerometer data
+	accel_x, accel_y, accel_z = accel #sets the acceleration values
+	mag_x, mag_y, mag_z = mag #although I don't use this, the .read() takes 6 points of data, so you need to give places for all 6 data points
+	
+  #(0,0) is the top left corner and adding to each value moves it right or left
+	draw.text((x, top), "Accelerometer Data:", font=font, fill=255)
+	draw.text((x, top + 10), "Accel x ={0}".format(round(accel_x / 100, 3)), font=font, fill=255) # draws x 
+	draw.text((x, top + 20), "Accel y ={0}".format(round(accel_y / 100, 3)), font=font, fill=255) # draws y
+	draw.text((x, top + 30), "Accel z ={0}".format(round(accel_z / 100, 3)), font=font, fill=255) # draws z
+
+	disp.image(image)
+	disp.display()
+
+  #clears screen so values can be updated
+	draw.rectangle((100, 12, 55, 50), outline=0, fill=0) # "refreshes" the xyz values so they can be updated
+	disp.image(image)
+	disp.display()
+
+	#added a sleep just for fun and to make sure nothing dies
+	time.sleep(.1)
+```
+
+### Images
+<img src="Pictures/I2Cwiring.jpg" width="300">
+
+### Reflection
+This code took a bit off troubleshooting with what parts of code were actually needed to use both the accelerometer and screen. The code from the two examples we ran after downloading to test were very helpful especially since a lot of the lines of code come from it. I link the githubs so they are easier to look at. I was having some trouble with getting the values to show on the screen so I refrenced classmates and Graham's was very helpful. 
+
+[OLED Screen](https://github.com/adafruit/Adafruit_Python_SSD1306/blob/master/examples/shapes.py)
+
+[Accelerometer](https://github.com/adafruit/Adafruit_Python_LSM303/blob/master/examples/simpletest.py)
+
+>>>>>>> d2593e954a05fa469252217f15760cf32f74b9e7
