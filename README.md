@@ -251,7 +251,6 @@ else:
 ### Reflection
 This code took me awhile to figure out because I wasn't sure how I was going to do it. I started by setting up the list of words and getting it to pick a random one. After I had that I moved on to setting up how the man shaped piñata would print. I then figured out how the guessing would work.
 
-<<<<<<< HEAD
 ## GPIO pins - Bash
 ### Description
 In this assignment, we had to make an LED blink 10 times using bash.
@@ -272,18 +271,38 @@ done
 gpio -g write 1 0 
 gpio -g write 2 0 
 ```
-### Images
 
 ### Reflection
-
 This module was a bit tricker than previous ones. It took me a little bit of research but eventually I figured it out.
+[Helpful Link](https://www.teknotut.com/en/first-raspberry-pi-project-blink-led/#Blink_Project)
+
+## GPIO Pins Python
+### Description
+In this assignment we blinked an LED using Python.
+### Code
+```Python
+import RPi.GPIO as GPIO 
+from time import sleep
+ 
+GPIO.setwarnings(False) # Everything breaks when this is removed
+GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
+GPIO.setup(1, GPIO.OUT, initial=GPIO.LOW) # Pin 8 is an output
+
+for x in range(10):   #loop runs 10 times
+ GPIO.output(1, GPIO.HIGH) # Turn on
+ sleep(1) # Sleep for 1 second
+ GPIO.output(1, GPIO.LOW) # Turn off
+ sleep(1) # Sleep for 1 second
+```
+### Reflection
+Fairly simple code just have to make sure everything is wired correctly.
 
 ## GPIO Pins I2C
 ### Description
 In this assignment we were tasked with using an accelerometer and an OLCD screen. I used the values I recieved from the accelerometer and then showed those values on the screen. A lot of this assignment was downloading and learning how to use the screen and accelerometer.
 
 ### Code
-```
+```python
 import time
 import Adafruit_SSD1306
 import Adafruit_LSM303
