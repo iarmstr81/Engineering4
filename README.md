@@ -277,6 +277,7 @@ gpio -g write 2 0
 ### Reflection
 
 This module was a bit tricker than previous ones. It took me a little bit of research but eventually I figured it out.
+
 =======
 ## GPIO Pins I2C
 ### Description
