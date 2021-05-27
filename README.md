@@ -253,7 +253,7 @@ This code took me awhile to figure out because I wasn't sure how I was going to 
 
 <<<<<<< HEAD
 ## GPIO pins - Bash
-### Discription
+### Description
 In this assignment, we had to make an LED blink 10 times using bash.
 ### Code
 ```python
