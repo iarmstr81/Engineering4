@@ -49,7 +49,7 @@ I struggled with this assignment in the beginning because I didn't know how I wo
 In this module, we had to make a calculator in python. We had to have the user input 2 numbers, then run those numbers through one function, and recieve the results of the 5 different operators (Addition, Subtraction, Multiplication, Division, Modulo)
 ### Code
 ```python
-##Caluclator
+##Caluculator
 ##Imogen Armstrong
 
 input1 = input("Select First Number: ") 
@@ -297,6 +297,27 @@ for x in range(10):   #loop runs 10 times
 ### Reflection
 Fairly simple code just have to make sure everything is wired correctly.
 
+## GPIO Pins SSH
+### Description
+In this module we had to do the same thing as the assignment before but remotely activate the LED.
+### Code
+```Python
+import RPi.GPIO as GPIO
+from time import sleep
+
+GPIO.setwarnings(False) # Everything breaks when this is removed
+GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
+GPIO.setup(1, GPIO.OUT, initial=GPIO.LOW) # Pin 8 is an output
+
+for x in range(10):   #loop runs 10 times
+ GPIO.output(1, GPIO.HIGH) # Turn on
+ sleep(1) # Sleep for 1 second
+ GPIO.output(1, GPIO.LOW) # Turn off
+ sleep(1) # Sleep for 1 second
+```
+### Reflection
+This was difficult for me because I had a lot of problems connecting remotely. However, once it worked it was fairly simple. Little disclaimer this is the same code as the python assignment becuase they are basically the same.
+
 ## GPIO Pins I2C
 ### Description
 In this assignment we were tasked with using an accelerometer and an OLCD screen. I used the values I recieved from the accelerometer and then showed those values on the screen. A lot of this assignment was downloading and learning how to use the screen and accelerometer.
@@ -366,4 +387,3 @@ This code took a bit off troubleshooting with what parts of code were actually n
 
 [Accelerometer](https://github.com/adafruit/Adafruit_Python_LSM303/blob/master/examples/simpletest.py)
 
->>>>>>> d2593e954a05fa469252217f15760cf32f74b9e7
