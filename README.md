@@ -278,7 +278,6 @@ gpio -g write 2 0
 
 This module was a bit tricker than previous ones. It took me a little bit of research but eventually I figured it out.
 
-=======
 ## GPIO Pins I2C
 ### Description
 In this assignment we were tasked with using an accelerometer and an OLCD screen. I used the values I recieved from the accelerometer and then showed those values on the screen. A lot of this assignment was downloading and learning how to use the screen and accelerometer.
