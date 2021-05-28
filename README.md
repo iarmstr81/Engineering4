@@ -470,3 +470,22 @@ while True:
 
 ### Reflection
 The hardest part of this assignment was figuring out how to actually make the graph and get it on the screen. I also had major issues with my SSH as my pi struggles to connect when unplugged from my computer.
+
+## Hello Flask
+### Description
+In this assignment we were tasked with setting up our raspberry pi to be a web server that you can access by typing the ip address into the web browser.
+### Code
+```Python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+     return "hello world!"
+
+if __name__ == "__main__":
+```
+The same code that is given to us in the module.
+### Reflection
+The assignment was fairly smooth. I did find that everything I was using had to be on the same network.
