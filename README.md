@@ -251,7 +251,7 @@ else:
 ### Reflection
 This code took me awhile to figure out because I wasn't sure how I was going to do it. I started by setting up the list of words and getting it to pick a random one. After I had that I moved on to setting up how the man shaped piñata would print. I then figured out how the guessing would work.
 
-## GPIO pins - Bash
+## GPIO Bash
 ### Description
 In this assignment, we had to make an LED blink 10 times using bash.
 ### Code
@@ -276,7 +276,7 @@ gpio -g write 2 0
 This module was a bit tricker than previous ones. It took me a little bit of research but eventually I figured it out.
 [Helpful Link](https://www.teknotut.com/en/first-raspberry-pi-project-blink-led/#Blink_Project)
 
-## GPIO Pins Python
+## GPIO Python
 ### Description
 In this assignment we blinked an LED using Python.
 ### Code
@@ -297,7 +297,7 @@ for x in range(10):   #loop runs 10 times
 ### Reflection
 Fairly simple code just have to make sure everything is wired correctly.
 
-## GPIO Pins SSH
+## GPIO SSH
 ### Description
 In this module we had to do the same thing as the assignment before but remotely activate the LED.
 ### Code
@@ -386,6 +386,12 @@ This code took a bit off troubleshooting with what parts of code were actually n
 [OLED Screen](https://github.com/adafruit/Adafruit_Python_SSD1306/blob/master/examples/shapes.py)
 
 [Accelerometer](https://github.com/adafruit/Adafruit_Python_LSM303/blob/master/examples/simpletest.py)
+
+## GPIO Flask
+### Description
+In this assignment we used a web server to control two LEDS, turning them on and off using 4 buttons.
+### Reflection
+The hardest part for me was figuring out how to differentiate the buttons but after I figured that out the code was fairly straightforward. 
 
 ## Headless
 ### Description
